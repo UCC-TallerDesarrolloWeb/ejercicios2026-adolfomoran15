@@ -11,8 +11,8 @@ para taller de desarrollo web
 
 [Link a Aula Virtual](https://github.com/UCC-TallerDesarrolloWeb/ejercicios2026-adolfomoran15)
 
-| Nombre |                  | Apellido           | Email |
-| ------ | ---------------- | ------------------ | ----- |
+| Nombre | Apellido         | Email              |
+| ------ | ---------------- | ------------------ |
 | Adolfo | Moran de la Vega | 2521762@ucc.edu.ar |
 
 :dizzy: :sparkles:
