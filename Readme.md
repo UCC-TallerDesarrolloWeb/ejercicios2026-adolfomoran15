@@ -25,7 +25,7 @@
 - [x] Link
 - [x] Tablas I
 - [x] Tablas II
-- [ ] Tablas III
+- [x] Tablas III
 - [ ] Tablas VI
 - [ ] Comentarios
 - [ ] Formulario
