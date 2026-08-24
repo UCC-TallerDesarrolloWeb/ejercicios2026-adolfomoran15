@@ -26,7 +26,7 @@
 - [x] Tablas I
 - [x] Tablas II
 - [x] Tablas III
-- [ ] Tablas VI
+- [x] Tablas IV
 - [ ] Comentarios
 - [ ] Formulario
 - [ ] Accesibilidad
