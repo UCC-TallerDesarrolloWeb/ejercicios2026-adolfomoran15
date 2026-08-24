@@ -24,7 +24,7 @@
 - [x] Listas
 - [x] Link
 - [x] Tablas I
-- [ ] Tablas II
+- [x] Tablas II
 - [ ] Tablas III
 - [ ] Tablas VI
 - [ ] Comentarios
