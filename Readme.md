@@ -18,19 +18,19 @@
 
 ### HTML
 
-- [ ] Primer HTML
-- [ ] Secciones
-- [ ] Títulos
-- [ ] Listas
-- [ ] Link
-- [ ] Tablas I
-- [ ] Tablas II
-- [ ] Tablas III
-- [ ] Tablas VI
-- [ ] Comentarios
-- [ ] Formulario
-- [ ] Accesibilidad
-- [ ] Multimedia
+- [x] Primer HTML
+- [x] Secciones
+- [x] Títulos
+- [x] Listas
+- [x] Link
+- [x] Tablas I
+- [x] Tablas II
+- [x] Tablas III
+- [x] Tablas IV
+- [x] Comentarios
+- [x] Formulario
+- [x] Accesibilidad
+- [x] Multimedia
 
 ### CSS
 
