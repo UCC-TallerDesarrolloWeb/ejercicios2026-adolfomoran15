@@ -29,7 +29,7 @@
 - [x] Tablas IV
 - [x] Comentarios
 - [x] Formulario
-- [ ] Accesibilidad
+- [x] Accesibilidad
 - [ ] Multimedia
 
 ### CSS
