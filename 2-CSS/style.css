@@ -1,0 +1,24 @@
+    .main-style {
+            text-align: center;
+            background: linear-gradient(to right, rgb(0, 255, 140), rgb(0, 195, 255));
+        }
+
+        div {
+            border: 4px, outset, burlywood;
+            margin: 19px;
+            padding: 15px 20px 8px;
+            background-color: rgba(125, 173, 209, 0.4);
+            border-radius: 45px;
+            box-shadow: 10px 6px orchid;
+        }
+
+        #imagen1 {
+            width: 8%;
+            float: left;
+            border-radius: 20%;
+        }
+
+        h3 {
+            font-family: "Betania Patmos", cursive;
+            text-shadow: 2px 2px orange;
+        }

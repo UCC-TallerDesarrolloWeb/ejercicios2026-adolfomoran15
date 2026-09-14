@@ -1,4 +1,10 @@
 {
   "spellright.language": ["es"],
-  "spellright.documentTypes": ["markdown", "latex", "plaintext"]
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
+  "workbench.editor.autoLockGroups": {
+    "default": true,
+    "workbench.editor.browser": true,
+    "workbench.input.interactive": true,
+    "mainThreadWebview-markdown.preview": true
+  }
 }
