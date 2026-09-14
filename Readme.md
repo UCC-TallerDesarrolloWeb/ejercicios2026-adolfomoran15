@@ -47,7 +47,7 @@
 - [x] Mejora
 - [x] Transitions
 - [x] Viewport
-- [ ] Responsive
+- [x] Responsive
 
 ## Unidad 3: JavaScript y ES6+
 
