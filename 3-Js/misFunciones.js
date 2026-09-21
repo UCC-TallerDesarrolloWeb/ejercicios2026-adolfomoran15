@@ -1,9 +1,8 @@
 /**
- * Descripción
- * @method Nombre de la función
- * @param Parámetro A
- * @param Parámetro B
- * @return Valor que retorna
+ * Conversion de unidades de metros, pies, yardas y pulgadas
+ * @method convertirUnidades
+ * @param {string} id - Id del elemento input en el html
+ * @param {number} valor - Valor ingresado por el usuario
  */
 function convertirUnidades(id, valor) {
 
@@ -41,4 +40,24 @@ function convertirUnidades(id, valor) {
         document.getElementById("pie").value = valor * 3;
 
     }
+}
+
+/**
+ * Conversion de grados a radianes 
+ * @method convertirGR
+ * @param {string} id - Id del elemento input en el html
+ */
+
+function convertirGR(id){
+    let grad,rad;
+
+    if(id==="grados"){
+        grad = document.getElementById("grados").value;
+        rad = (grad * Math.PI)/180;
+    }else{
+        rad = document.getElementById("radianes").value;
+        grad = (rad*180)/Math.PI;
+    }
+    document.getElementById("grados").value = grad;
+    document.getElementById("radianes").value = rad;
 }
