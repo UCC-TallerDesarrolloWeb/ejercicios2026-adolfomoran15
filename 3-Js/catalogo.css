@@ -4,21 +4,25 @@
     --color-texto: white;
 }
 
-main{
+main {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
+}
 
-    & div{
-        border: 1px solid black;
-        margin: 10px;
-        text-align: center;
-        border-radius: 15px;
-        padding: 10px;
+#catalogo {
+    display: contents;
+}
 
-        & img{
-            width: 100%;
-        }
-    }
+#catalogo > div {
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#catalogo > div img {
+    width: 100%;
 }
 
 
@@ -59,4 +63,13 @@ a {
 a:hover {
   background-color: var(--color-secundario);
   padding: 7px;
+}
+
+#modal {
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }

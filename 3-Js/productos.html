@@ -7,62 +7,85 @@
     <script type="text/javascript" src="tienda.js"></script>
 </head>
 
-<body class="grid-container" onload="mostrarCatalogo()"></body>
-<header class="item1">
-    Catologo de Productos
-</header>
-<nav class="item2">
-    <a href="productos.html">Catologo de Productos</a>
-    <a href="">Carrito de Compras</a>
+<body class="grid-container" onload="mostrarCatalogo()">
 
-</nav>
-<aside class="item3">
-    <form name="filter">
-        <fieldset>
-            <legend>Buscador</legend>
-            <label for="search">Buscar</label>
-            <input type="text" name="search" id="search" placeholder="Buscar">
-        </fieldset>
-        <fieldset>
-            <legend>Precios</legend>
-            <p>
-                <label for="price-min">Minimo</label>
-                <input type="number" name="price-min" id="price-min" min="0">
-            </p>
-            <p>
-                <label for="price-max">Maximo</label>
-                <input type="number" name="price-max" id="price-max" min="0">
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Tipo de Productos</legend>
-            <p>
-                <input type="checkbox" name="tipo" id="protectores" value="protectores">
-                <label for="protectores">protectores</label>
-            </p>
-            <p>
-                <input type="checkbox" name="tipo" id="entrenamiento" value="entrenamiento">
-                <label for="entrenamiento">entrenamiento</label>
-            </p>
-            <p>
-                <input type="checkbox" name="tipo" id="dobok" value="dobok">
-                <label for="dobok">dobok</label>
-            </p>
-        </fieldset>
-    </form>
-</aside>
-<main class="item4" id="catalogo">
+    <header class="item1">
+        Catologo de Productos
+    </header>
 
-    <dialog id="modal">
-        <h2>Cabezal cerrado</h2>
-        <p>Cabezal de Sparring disponible en color rojo o azul</p>
-        <button type="button" onclick="cerrarModal()">Cerrar</button>
-    </dialog>
+    <nav class="item2">
+        <a href="productos.html">Catologo de Productos</a>
+        <a href="">Carrito de Compras</a>
+    </nav>
 
-</main>
-<footer class="item5">
-    Contacto
-</footer>
+    <aside class="item3">
+        <form name="filter">
+
+            <fieldset>
+                <legend>Buscador</legend>
+
+                <label for="search">Buscar</label>
+                <input type="text" name="search" id="search" placeholder="Buscar">
+            </fieldset>
+
+            <fieldset>
+                <legend>Precios</legend>
+
+                <p>
+                    <label for="price-min">Minimo</label>
+                    <input type="number" name="price-min" id="price-min" min="0">
+                </p>
+
+                <p>
+                    <label for="price-max">Maximo</label>
+                    <input type="number" name="price-max" id="price-max" min="0">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de Productos</legend>
+
+                <p>
+                    <input type="checkbox" name="tipo" id="protectores" value="protectores">
+                    <label for="protectores">protectores</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="tipo" id="entrenamiento" value="entrenamiento">
+                    <label for="entrenamiento">entrenamiento</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="tipo" id="dobok" value="dobok">
+                    <label for="dobok">dobok</label>
+                </p>
+            </fieldset>
+
+        </form>
+    </aside>
+
+    <main class="item4">
+
+
+        <dialog id="modal">
+            <h2 id="nombre-producto"></h2>
+
+            <p id="descripcion-producto"></p>
+
+            <button type="button" onclick="cerrarModal()">
+                Cerrar
+            </button>
+        </dialog>
+
+
+        <div id="catalogo"></div>
+
+    </main>
+
+    <footer class="item5">
+        Contacto
+    </footer>
+
 </body>
 
 </html>
