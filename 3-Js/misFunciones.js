@@ -92,7 +92,7 @@ calcularSuma = () =>{
     let sum1,sum2;
     sum1 = Number(document.getElementById("nums1").value);
     sum2 = Number(document.getElementById("nums2").value);
-    document.getElementById("totalS").value = sum1 + sum2;
+    document.getElementById("totalS").innerText = sum1 + sum2;
 }
 
 /**
@@ -105,7 +105,7 @@ calcularResta = () => {
     let res1,res2;
     res1 = Number(document.getElementById("numr1").value);
     res2 = Number(document.getElementById("numr2").value);
-    document.getElementById("totalR").value = res1 - res2;
+    document.getElementById("totalR").innerText = res1 - res2;
 }
 
 /**
@@ -116,7 +116,7 @@ calcularMultiplicacion = () => {
 let mult1,mult2;
     mult1 = Number(document.getElementById("numm1").value);
     mult2 = Number(document.getElementById("numm2").value);
-    document.getElementById("totalM").value = mult1 * mult2;
+    document.getElementById("totalM").innerText = mult1 * mult2;
 }
 /**
  * Calcula la division de 2 valores ingresados por el usuario
@@ -126,5 +126,5 @@ calcularDivision = () => {
 let div1,div2;
     div1 = Number(document.getElementById("numd1").value);
     div2 = Number(document.getElementById("numd2").value);
-    document.getElementById("totalD").value = div1/div2;
+    document.getElementById("totalD").innerText = div1/div2;
 }
