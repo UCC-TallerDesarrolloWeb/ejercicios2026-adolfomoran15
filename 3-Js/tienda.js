@@ -79,3 +79,29 @@ mostarModal = () =>{
 cerrarModal = () =>{
   document.getElementById("modal").style.display = 'none';
 }
+
+/**
+ * Mostrar el catalogo de productos en la seccion main
+ * @method mostrarCatologo
+ */
+
+
+mostrarCatalogo = () => {
+
+    let contenido = "";
+
+    productos.forEach((producto) => {
+
+        contenido += `<div>
+            <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/${producto.imagen}"
+                 alt="${producto.nombre}">
+            <h3>${producto.nombre}</h3>
+            <button type="button" onclick="mostarModal()">
+                Ver detalle de Producto
+            </button>
+        </div>`;
+
+    });
+
+    document.getElementById("catalogo").innerHTML = contenido;
+}
