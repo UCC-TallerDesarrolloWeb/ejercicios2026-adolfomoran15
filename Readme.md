@@ -58,7 +58,7 @@
 - [x] Refactorización
 - [x] Mostrar/Ocultar div
 - [x] Mostrar/Ocultar Dialog
-- [ ] Operaciones Matemáticas
+- [x] Operaciones Matemáticas
 - [ ] Conversor de Unidades II
 - [ ] Operaciones Matemáticas II
 - [ ] Renderizado Dinámico
