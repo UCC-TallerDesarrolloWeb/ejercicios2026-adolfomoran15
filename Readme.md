@@ -68,7 +68,7 @@
 - [x] Filter
 - [x] Formatear Precio
 - [x] Total y Cantidad de Productos
-- [ ] Ordenar el catálogo
+- [x] Ordenar el catálogo
 
 ## Unidad 4: Funcionamiento del Navegador y Herramientas de Desarrollo
 

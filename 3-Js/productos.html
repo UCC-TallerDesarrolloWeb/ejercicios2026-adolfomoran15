@@ -9,7 +9,7 @@
 
 <body class="grid-container" onload="mostrarCatalogo();contarProductos()">
 
-    <header class=" item1">
+    <header class="item1">
         Catologo de Productos
     </header>
 
@@ -70,7 +70,15 @@
                     <label for="dobok">dobok</label>
                 </p>
             </fieldset>
-
+            <fieldset>
+                <legend>Ordenar Catalogo</legend>
+                <select id="order" onchange="ordenarCatalogo()">
+                    <option value="mayor">Por precio- de Mayor a Menor</option>
+                    <option value="menor">Por precio - de Menor a Mayor</option>
+                    <option value="a-z">Por Nombre- de A-Z</option>
+                    <option value="z-a">Por Nombre- de Z-A</option>
+                </select>
+            </fieldset>
         </form>
     </aside>
 
