@@ -101,7 +101,7 @@ mostrarCatalogo = (newList = productos) => {
                      alt="${producto.nombre}">
 
                 <h3>${producto.nombre}</h3>
-                <p>${producto.precio}</p>
+                <p>${formatPrice(producto.precio)}</p>
                 <button type="button" onclick="mostarModal(${id})">
                     Ver detalle de Producto
                 </button>
@@ -134,6 +134,8 @@ agregarAlCarrito = (num) => {
 
   carritoList.push(num);
   localStorage.setItem("carrito", JSON.stringify(carritoList));
+
+  contarProductos();
 }
 /**
  * Muestra dinamicamente los productos que estan en el localstorage
@@ -161,7 +163,7 @@ mostrarCarrito = () => {
     carritoList.forEach((num, id ) => {
       contenido += `<div>
         <h3>${productos[num].nombre}</h3>
-        <p>${productos[num].precio}</p>
+        <p>${formatPrice(productos[num].precio)}</p>
         <button type="button" onclick="eliminarProducto(${id})">Eliminar Producto</button>
       </div>`;
     });
@@ -181,6 +183,7 @@ mostrarCarrito = () => {
 let vaciarCarrito = () => {
   localStorage.removeItem("carrito");
   window.location.reload();
+
 }
 
 /**
@@ -205,7 +208,7 @@ let eliminarProducto = (id) => {
 }
 
 /**
- * Filtra el catologo 
+ * Filtra el catologo por palabra, precio,marca y tipo
  * @method filtrarProducto
  */
 let filtrarProducto = () => {
@@ -245,4 +248,26 @@ let filtrarProducto = () => {
   }
 
   mostrarCatalogo(newList);
+}
+
+/**
+ * Formatea el precio 
+ * @method formatPrice
+ * @param {number} price - precio del producto
+ */
+
+let formatPrice = (price) => {
+  return new Intl.NumberFormat("es-AR", {
+    style: "currency",
+    currency: "ARS"
+  }).format(price);
+}
+
+let contarProductos = () => {
+  let carritoList = localStorage.getItem("carrito");
+  carritoList = JSON.parse(carritoList);
+
+  if(carritoList.length>0){
+    document.getElementById("cant-prod").innerText = carritoList.length;
+  }
 }

@@ -66,8 +66,8 @@
 - [x] Carrito de Compras con localstorage
 - [x] Vaciar Carrito y Eliminar Producto
 - [x] Filter
-- [ ] Formatear Precio
-- [ ] Total y Cantidad de Productos
+- [x] Formatear Precio
+- [x] Total y Cantidad de Productos
 - [ ] Ordenar el catálogo
 
 ## Unidad 4: Funcionamiento del Navegador y Herramientas de Desarrollo
