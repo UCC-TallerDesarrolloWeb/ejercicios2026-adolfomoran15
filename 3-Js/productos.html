@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Catalogo de Productos</title>
+    <link href="catalogo.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="tienda.js"></script>
+</head>
+
+<body class="grid-container" onload="mostrarCatalogo();contarProductos()">
+
+    <header class="item1">
+        Catologo de Productos
+    </header>
+
+    <nav class="item2">
+        <a href="productos.html">Catologo de Productos</a>
+        <a href="carrito.html">Carrito de Compras</a>
+        <div id="cant-prod">0</div>
+    </nav>
+
+    <aside class="item3">
+        <form name="filter">
+
+            <fieldset>
+                <legend>Buscador</legend>
+
+                <label for="search">Buscar</label>
+                <input type="text" name="search" id="search" placeholder="Buscar" onchange="filtrarProducto()">
+            </fieldset>
+
+            <fieldset>
+                <legend>Precios</legend>
+
+                <p>
+                    <label for="price-min">Minimo</label>
+                    <input type="number" name="price-min" id="price-min" min="0" onchange="filtrarProducto()">
+                </p>
+
+                <p>
+                    <label for="price-max">Maximo</label>
+                    <input type="number" name="price-max" id="price-max" min="0" onchange="filtrarProducto()">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Marca</legend>
+                <select id="marca" onchange="filtrarProducto()">
+                    <option value="Todas">Todas</option>
+                    <option value="Gran Marc">Gran Marc</option>
+                    <option value="Daedo">Daedo</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de Productos</legend>
+
+                <p>
+                    <input type="checkbox" name="tipo" id="protectores" value="protectores"
+                        onchange="filtrarProducto()">
+                    <label for="protectores">protectores</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="tipo" id="entrenamiento" value="entrenamiento"
+                        onchange="filtrarProducto()">
+                    <label for="entrenamiento">entrenamiento</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="tipo" id="dobok" value="dobok" onchange="filtrarProducto()">
+                    <label for="dobok">dobok</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Ordenar Catalogo</legend>
+                <select id="order" onchange="ordenarCatalogo()">
+                    <option value="mayor">Por precio- de Mayor a Menor</option>
+                    <option value="menor">Por precio - de Menor a Mayor</option>
+                    <option value="a-z">Por Nombre- de A-Z</option>
+                    <option value="z-a">Por Nombre- de Z-A</option>
+                </select>
+            </fieldset>
+        </form>
+    </aside>
+
+    <main class="item4">
+
+
+        <dialog id="modal">
+            <h2 id="nombre-producto"></h2>
+
+            <p id="descripcion-producto"></p>
+
+            <button type="button" onclick="cerrarModal()">
+                Cerrar
+            </button>
+        </dialog>
+
+
+        <div id="catalogo"></div>
+
+    </main>
+
+    <footer class="item5">
+        Contacto
+    </footer>
+
+</body>
+
+</html>
