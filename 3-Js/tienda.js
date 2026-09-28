@@ -160,14 +160,30 @@ mostrarCarrito = () => {
   if (carritoList.length === 0) {
     contenido = `<div>Su carrito de compras esta vacio</div>`;
   } else {
-    carritoList.forEach((num, id ) => {
+let total = 0;
+    const listProd = [];
+    const listcant = [];
+
+    carritoList.forEach((num) => {
+      if(!listProd.includes(num)){
+        listProd.push(num);
+        listcant.push(1);
+      }else{
+        const ind = listProd.indexOf(num);
+        listcant[ind] +=1;
+      }
+    })
+
+    listProd.forEach((num, id ) => {
       contenido += `<div>
         <h3>${productos[num].nombre}</h3>
         <p>${formatPrice(productos[num].precio)}</p>
-        <button type="button" onclick="eliminarProducto(${id})">Eliminar Producto</button>
+        <p>Cantidad: ${listcant[id]}</p>
+        <button type="button" onclick="eliminarProducto(${num})">Eliminar Producto</button>
       </div>`;
+      total += productos[num].precio * listcant[id];
     });
-
+    contenido += `Total: ${formatPrice(total)}`;
     contenido += `<button type="button" onclick="vaciarCarrito()">Vaciar Carrito</button>`;
   }
 
