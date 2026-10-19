@@ -1,0 +1,22 @@
+@use 'variables';
+@use 'anidacion';
+
+body {
+    background-color: variables.$color-primario;
+}
+
+@mixin caja_personalizada($fondo: rgb(207, 61, 192), $color: variables.$color-letra){
+    background-color: $fondo;
+    border: 6px solid burlywood;
+    box-shadow: 0 0 2px rgb(42, 48, 165);
+    color: $color;
+    margin: 20px;
+}
+
+.caja{
+    @include caja_personalizada();
+}
+
+.caja-secundaria{
+    @include caja_personalizada($fondo: rgb(0, 170, 255),$color: rgb(247, 204, 246) );
+}

@@ -1,0 +1,26 @@
+.caja h2 {
+  color: #0079c4;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fedc78;
+}
+
+.caja {
+  background-color: rgb(207, 61, 192);
+  border: 6px solid burlywood;
+  box-shadow: 0 0 2px rgb(42, 48, 165);
+  color: #0079c4;
+  margin: 20px;
+}
+
+.caja-secundaria {
+  background-color: rgb(0, 170, 255);
+  border: 6px solid burlywood;
+  box-shadow: 0 0 2px rgb(42, 48, 165);
+  color: rgb(247, 204, 246);
+  margin: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
