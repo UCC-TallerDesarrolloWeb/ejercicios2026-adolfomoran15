@@ -1,0 +1,80 @@
+
+@use 'mobile';
+
+@import url('https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Erica+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+$primary-color: rgb(249, 150, 74);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'google sans', sans-serif;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+p{
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+
+#navbar{
+    padding-top: 20px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        .logo img{
+            width: 50px;
+        }
+    
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            margin-left: 40px;
+            text-transform: uppercase;
+            a{
+                color: #e0d100;
+            }
+        }
+    }
+}
+
+#showcase {
+    color: #b3e7d4;
+
+}
+
+.bk-primary{
+    background: $primary-color;
+}
+
+#features {
+    .container{
+        display: grid;
+        padding: 20px 0;
+        @media(width>=700px){
+        grid-template-columns: repeat(2,1fr);
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
