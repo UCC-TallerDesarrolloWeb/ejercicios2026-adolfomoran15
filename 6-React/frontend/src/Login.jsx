@@ -1,15 +1,18 @@
 import { useState } from "react";
 import "../src/styles/login.scss"
+import {useNavigate} from 'react-router-dom';
 
 const Login = () =>{
     const [username,setUsername] = useState("");
     const [password,setPassword] = useState("");
+    const navigate = useNavigate();
 
 
     const handleLogin = async (e) => {
         e.preventDefault();
         if(username == "admin" && password=="admin"){
-            console.log("Login OK")
+            console.log("Login OK");
+            navigate('/activities');
         }else{
             console.log("Log incorrecto")
         }
@@ -17,8 +20,7 @@ const Login = () =>{
     return (
 
         <div className="login-container">
-            <form className="login-form" onSubmit={handleLogin}></form>
-            <form className="login-form">
+            <form className="login-form" onSubmit={handleLogin}>
                 <h2>Iniciar Sesion</h2>
                 <label htmlFor="username">Username: </label>
                 <input id="username" type="text" placeholder="usuario" onChange={(e) => setUsername(e.target.value)} 
