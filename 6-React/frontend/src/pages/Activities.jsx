@@ -1,12 +1,43 @@
 import '@styles/Activities.scss'
 import Card from '@components/Card';
-import {activities, diasSemana} from '../Data/Activities'
+// import {activities, diasSemana} from '../Data/Activities'
+import { useEffect, useState } from 'react';
 
 const Activities = () => {
 
-  
-
 const isLogin = localStorage.getItem("isLogin") === "true";
+
+const [activities, setActivities] = useState([]);
+const [diasSemana, setDiasSemana] = useState([]);
+
+const BASE_URL = "http://localhost:4000/";
+
+const fetchActivities = async () => {
+    try {
+        const response = await fetch(`${BASE_URL}activities`);
+        const data = await response.json();
+        setActivities(data);
+    }catch(error){
+        console.error(`Error al retornar actividades: ${error}`)
+    }
+}
+
+const fetchDias = async () => {
+    try{
+        const response = await fetch(`${BASE_URL}diasSemana`);
+        const data = await response.json();
+        setDiasSemana(data.dias);
+    }catch(error){
+        console.error(`Error al retornar dias de la semana: ${error}`);
+    }
+}
+
+
+useEffect(() =>{
+    fetchActivities();
+    fetchDias();
+
+},[]);
 
 const handlerInscribir = (nombreActividad) => {
     `Inscripto en ${nombreActividad}`
