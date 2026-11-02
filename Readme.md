@@ -40,7 +40,7 @@
 - [x] Pseudo Clases
 - [x] CV
 - [x] Backgrounds
-- [ ] Position
+- [ ] Position <!-- Consultar (por las dudas) -->
 - [x] 2 Columnas
 - [x] Grid
 - [x] grid-areas
@@ -72,18 +72,18 @@
 
 ## Unidad 4: Funcionamiento del Navegador y Herramientas de Desarrollo
 
-- [ ] Checkeo de accesiilidad: AXE
-- [ ] Checkeo de Lighthouse: accesibilidad, CEO, performance, buenas prácticas
+- [x] Checkeo de accesiilidad: AXE
+- [x] Checkeo de Lighthouse: accesibilidad, CEO, performance, buenas prácticas
 
 ## Unidad 5: Frameworks y Preprocesadores CSS
 
 ### BootStrap
 
-- [ ] Instagram
+- [x] Instagram
 - [x] Componente para selección de vuelos
-- [ ] Timeline
+- [ ] Timeline <!-- Consultar -->
 - [x] Componente Perfil
-- [ ] Youtube
+- [ ] Youtube <!-- Consultar -->
 
 ### SASS
 
@@ -103,10 +103,10 @@
 ## Unidad 7: Backend y APIs
 
 - [ ] Mock del Backend
-- [ ] Análisis de Pokeapi
+- [x] Análisis de Pokeapi
 - [ ] APIs en React
 - [ ] APIs en React
-- [ ] Carrito
+- [x] Carrito
 
 ## Unidad 8: Buenas prácticas en los desarrollos web
 
